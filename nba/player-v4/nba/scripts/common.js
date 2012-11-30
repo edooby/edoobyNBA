@@ -144,7 +144,7 @@ function showhideScore(isAuto)
 		$(".homescore").css("visibility", "visible");
 		$(".awayscore").css("visibility", "visible");
 		$(".scoreOnValue").show();
-		$(".scoreOffValue").hide();
+		//$(".scoreOffValue").hide();
 		_showScores(isAuto);
 	}
 	else
@@ -154,7 +154,7 @@ function showhideScore(isAuto)
 		$(".homescore").css("visibility", "hidden");
 		$(".awayscore").css("visibility", "hidden");
 		$(".scoreOnValue").hide();
-		$(".scoreOffValue").show();
+		
 		_hideScores(isAuto);
 	}
 }

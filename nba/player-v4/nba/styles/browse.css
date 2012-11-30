@@ -140,6 +140,7 @@ a.browseTabUnselected
 #browseContainer .calendarSelector:hover .left{ background:url('../images/whiteTab.png') no-repeat; }
 #browseContainer .calendarSelector:hover .middle{ background-color:#FFFFFF; }
 #browseContainer .calendarSelector:hover .right{ background:url('../images/whiteTab.png') -10px 0px; }
+ 
 
 #browseContainer .viewLabels{ float:right; margin-left:0px; margin-right:5px; margin-top: 19px; }
 #browseContainer .viewLabels .showAll{ float:left; color:#000000; margin-top:11px; }
