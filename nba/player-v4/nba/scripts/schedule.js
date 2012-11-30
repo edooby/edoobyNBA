@@ -259,7 +259,7 @@ function getGameTimeByFeed(val)
 	switch(val.gs)
 	{
 		case 0:
-			gameTime = formatScheduleTime(val.d) + "&nbsp;ET";
+			gameTime = formatScheduleTime(val.d);
 			break;
 		case 1:
 			if(val.c == "" && val.ps != null) gameTime = val.ps;
@@ -282,7 +282,7 @@ function getGameTimeByFeed(val)
 	}
 	var gameTime_on = gameTime;
 	var gameTime_off = val.gs > 1 ? $("#game_final").html() : (val.gs == 1 ? $("#game_live").html() : gameTime);	
-	gameTime = "<table><tr><td><span class='scoreOnValue'>"+gameTime_on+"</span><span class='scoreOffValue'>"+gameTime_off+"</span></td></tr></table>";
+	gameTime = "<table><tr><td><span class='scoreOnValue'>"+gameTime_on+"</span></td></tr></table>";
 	return gameTime;
 }
 
