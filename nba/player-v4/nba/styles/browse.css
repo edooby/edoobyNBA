@@ -1,0 +1,260 @@
+#browseContainer
+{
+	position:relative;
+	width:1180px;
+	margin:auto;
+}
+.browseTab
+{
+	height:34px;
+	float:left;
+}
+a.browseTabUnselected
+{
+	height:34px;
+	float:left;
+	color:#666666;
+	padding:0 14px 0 14px;
+	font-weight:bold;
+	line-height:30px;
+	margin-left:5px;
+	display:block;
+}
+
+.browseTab div{ height:34px; float:left; color:#666666; font-weight:bold; line-height:30px; }
+.browseTab div.left{ background:url('../images/browseTab.png') no-repeat; width:10px; }
+.browseTab div.middle{ background-color:#E1E1E1; background-image:url('../images/arrow-schedule.png'); background-repeat:no-repeat; background-position:center 23px; padding:0 4px 0 4px; }
+.browseTab div.right{ background:url('../images/browseTab.png') no-repeat -10px center; width:10px; }
+
+#browseContainer .browseSelectorContainer{ background:url('../images/schedule-nav-bg.png') repeat-x; height:60px; width:800px;}
+#browseContainer .weekSelector{ float:left; min-width:558px; height:60px; }
+#browseContainer .browseSelectorContainer a.weekPrev,a.weekNext
+{
+	background:url('../images/schedule-nav--.png');
+	width:28px;
+	height:45px;
+	display:inline-block;
+	margin:15px 0 0 12px;
+	float:left;
+}
+#browseContainer .browseSelectorContainer a.weekDay
+{
+	background:url('../images/schedule-tab-bg.png') repeat-X;
+	width:70px;
+	height:45px;
+	float:left;
+	margin:15px 0 0 0;
+	text-decoration:none;
+	text-align:center;
+	font-size:13px;
+	font-weight:bold;
+	cursor:pointer;
+}
+#browseContainer .browseSelectorContainer a.weekDay span
+{
+	font-style:italic;
+	font-size:9px;
+	color:#666666;
+}
+#browseContainer .browseSelectorContainer a.weekNext
+{
+	background:url('../images/schedule-nav-+.png');
+	margin:15px 0 0 0;
+	float:left;
+}
+#browseContainer .browseSelectorContainer a.weekDay .normal
+{
+	padding-top:12px;
+	background:url('../images/divider-schedule-nav.png') no-repeat right 5px;
+	height:33px;
+	color:#999999;
+}
+#browseContainer .browseSelectorContainer a.weekDay:hover{ background:url('../images/schedule-tab-bg_mo.png') no-repeat left top; }
+#browseContainer .browseSelectorContainer a.weekDay .select{ background:url('../images/schedule-tab-bg_sel.png') repeat-X; color:#FFFFFF; }
+#browseContainer .browseSelectorContainer a.weekDay .select span{ color:#CCCCCC; }
+#browseContainer .browseSelectorContainer a.wddisabled {
+    background: url('../images/schedule-tab-disbg.png') repeat-x;
+    cursor: default !important;
+}
+#browseContainer .browseSelectorContainer a.wddisabled:hover {
+    background: url('../images/schedule-tab-disbg.png') repeat-x;
+    cursor: default;
+}
+#browseContainer .browseSelectorContainer a.wddisabled .normal,
+#browseContainer .browseSelectorContainer a.wddisabled span {
+    color: #000;
+}
+#browseContainer .browseSelectorContainer a.wpdisabled,
+#browseContainer .browseSelectorContainer a.wpdisabled {
+    cursor: default;
+    background-position: 0 -45px !important;
+}
+
+#browseContainer .calendarSelector,#browseContainer .viewLabels
+{
+	float:left;
+	color:#666666;
+	font-size:13px;
+	font-weight:bold;
+	padding:0 5px 0 5px;
+	margin:30px 0 0 40px;
+	cursor:pointer;
+}
+
+#browseContainer .viewLabels .shscore{ cursor:default; color:#000000; float:left; line-height:31px; padding:0 9px; margin:3px 6px 0 0; }
+#browseContainer .viewLabels .shscore ul{ float:left; margin-left:5px; }
+#browseContainer .viewLabels ul li{ float:left; cursor:pointer; background:url('../images/dot-white.png') no-repeat left center; padding-left:22px; margin:0 3px; }
+#browseContainer .viewLabels li:hover{ color:#006BB6; }
+#browseContainer .viewLabels li.selected{ background-image:url('../images/dot-blue.png'); }
+
+#browseContainer .playlistInfoBox{ float:right; width:300px; margin-right:90px; }
+#browseContainer .playlistInfoBox .txt{ float:left; font-size:14px; font-weight:bold; color:#333333; }
+#browseContainer .playlistInfoBox a.shareBtn{ background:url('../images/icon-share-btn.png'); margin-left:4px; float:left; width:32px; height:30px; }
+
+#browseContainer .searchLabel{ position:absolute; top:-41px; right:10px; cursor:pointer; }
+#browseContainer .searchLabel div{ height:41px; float:left; color:#666666; font-weight:bold; line-height:36px; }
+#browseContainer .searchLabel .left{ background:url('../images/whiteTab.png') no-repeat; width:10px; }
+#browseContainer .searchLabel .middle{ background-image:url('../images/icon-search.png') !important; background-repeat:no-repeat !important; background-position:0px 14px !important; background-color:#FFFFFF; padding:0 4px 0 13px; }
+#browseContainer .searchLabel .right{ background:url('../images/whiteTab.png') -10px 0px; width:10px; }
+#browseContainer .searchLabel .mouseup{ background:none; }
+
+#browseContainer .calendarSelector{ margin-left: 0px; margin-top: 19px; padding:0px; }
+#browseContainer .calendarSelector .left, #browseContainer .calendarSelector .right{ width:10px; height:41px; float:left; }
+#browseContainer .calendarSelector .middle{
+	background: url("../images/icon-calendar.png") no-repeat scroll left 10px transparent;
+	text-indent: 20px;
+	color: #666666;
+    float: left;
+    font-weight: bold;
+    height: 41px;
+    line-height: 36px;
+}
+#browseContainer .calendarSelector .ui-datepicker-title{
+	float:none;
+	line-height:20px;
+	height:auto;
+	text-transform: uppercase;
+}
+#browseContainer .calendarSelector .ui-datepicker{ display:none !important; }
+#browseContainer .calendarSelector:hover .ui-datepicker{ display:block !important; }
+#browseContainer .calendarSelector:hover .left{ background:url('../images/whiteTab.png') no-repeat; }
+#browseContainer .calendarSelector:hover .middle{ background-color:#FFFFFF; }
+#browseContainer .calendarSelector:hover .right{ background:url('../images/whiteTab.png') -10px 0px; }
+
+#browseContainer .viewLabels{ float:right; margin-left:0px; margin-right:5px; margin-top: 19px; }
+#browseContainer .viewLabels .showAll{ float:left; color:#000000; margin-top:11px; }
+#browseContainer .viewLabels .teamBox{ float:left; margin-left:10px; }
+#browseContainer .viewLabels .teamBox .teamLabel{ background-image:url('../images/arrows_language.png'); background-position:right 16px; padding-right:10px; line-height:38px; }
+#browseContainer .viewLabels .teamBox .mouseup .left{ background:none; border-left:1px #8E8E8E solid; width:9px; height:17px; margin-top:10px; }
+#browseContainer .viewLabels .teamBox .mouseup .middle{ background-color:transparent; }
+#browseContainer .viewLabels .teamBox .mouseup .right{ visibility:hidden; }
+#browseContainer .viewLabels .teamBox:hover .teamDropdown { display:block; }
+
+.teamDropdown{ display:none; z-index:5; position:absolute; padding:0 20px 34px 20px; font-weight:bold; width:777px; right:0px; top:60px; background:#FFFFFF; border-bottom:5px #CCCCCC solid; font-family:Arial; font-stretch:condensed; cursor:auto; }
+.teamDropdown .favTeamBox{ height:59px; margin-top:18px; color:#999999; background:url('../images/team-dividar.png') repeat-x bottom left; }
+.teamDropdown .favTeamBox div{ /*float:left;*/ line-height:45px; }
+.teamDropdown .favTeamBox img{ float:left; }
+.teamDropdown .favTeamBox .favTeamLabel{ float:left; margin-right:12px; }
+.teamDropdown .favTeamBox .teamName{ font-size:11px; color:#666666; float:left; text-transform:uppercase; }
+.teamDropdown .favTeamBox .alertLabel{ display:none; float:left; color:#666666; }
+.teamDropdown .favTeamBox .comboBox{ margin:10px 0 0 10px; }
+.teamDropdown .noFav img{ display:none; }
+.teamDropdown .noFav .alertLabel{ display:block; }
+.teamDropdown .noFav .teamName{ display:none; }
+
+.teamDropdown .eastern{ float:left; width:388px; border-right:1px #DDDDDD solid; }
+.teamDropdown .western{ float:left; width:388px; }
+
+.teamDropdown .title{ font-size:17px; color:#666666; line-height:52px; border-bottom:1px #DDDDDD solid; text-align:center; }
+.teamDropdown .eastern .centerArea,.teamDropdown .western .centerArea{ border-right:1px #DDDDDD solid; border-left:1px #DDDDDD solid; width:128px; }
+.teamDropdown .area{ float:left; width:129px; margin-top:13px; }
+.teamDropdown .area .title{ font-size:12px; border-bottom:none; }
+.teamDropdown .area .teamIco{ cursor:pointer; text-transform:uppercase; text-align:center; font-size:8px; font-weight:bold; color:#666666; height:px; }
+
+
+#browseContainer .browseResultContainer{ background:url('../images/game-bg.png'); min-height:150px; padding:10px; width:800px }
+#browseContainer .browseResultContainer .nogameTxt{ font-size:40px;font-weight:bold;color:#999999;text-align:center;margin-top:50px; }
+#browseContainer .browseResultContainer .gameItem
+{
+	background: url('../images/game-bg-w.@.png');
+	width: 270px;
+	height: 130px;
+	float: left;
+	padding: 10px;
+	margin:0;
+	position: relative;
+}
+#browseContainer .browseResultContainer .gameItem .normal,#browseContainer .browseResultContainer .gameItem .over { width:270px; position:absolute; left:10px; top:10px; cursor:pointer; }
+#browseContainer .browseResultContainer .gameItem .normal{ font-family:Arial; font-weight:bold; font-stretch:condensed; }
+#browseContainer .browseResultContainer .gameItem .normal .team
+{
+	float:left;
+	width:135px;
+	height:85px;
+	background-repeat:no-repeat;
+	background-position:center 10px;
+	border-top:5px #ffffff solid;
+	color:#FFFFFF;
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	line-height:126px;
+	text-transform:uppercase;
+}
+#browseContainer .browseResultContainer .gameItem .normal .awayscore,#browseContainer .browseResultContainer .gameItem .normal .homescore
+{
+	float:left;
+	width:80px;
+	line-height:38px;
+	font-size:24px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+#browseContainer .browseResultContainer .gameItem .normal .awayscore{ text-align:right; }
+#browseContainer .browseResultContainer .gameItem .normal .homescore{ float:right; }
+#browseContainer .browseResultContainer .gameItem .normal .state{ text-transform:uppercase; position:relative; font-size:11px; text-align:center; float:left; width:110px; color:#999999; line-height:38px; }
+#browseContainer .browseResultContainer .gameItem .normal .state table{ width:70px;height:38px;margin:0 20px;line-height:normal; }
+#browseContainer .browseResultContainer .gameItem .normal .state .blocked{ display:none; position:absolute; line-height:15px; min-width:55px; top:-84px; left:16px; background:#202020; color:#606060; font-size:10px; text-align:center; padding:0 12px; }
+
+#browseContainer .browseResultContainer .gameItem .over
+{ 
+	display:none;
+	border:5px #177BC7 solid;
+	width:115px;
+	height:60px;
+	text-align:center;
+	cursor:default;
+	color:#CCCCCC;
+	font-weight:bold;
+	padding:0 15px 0 15px;
+	display:none;
+}
+#browseContainer .browseResultContainer .gameItem .over .title{ margin-top:22px; }
+
+{
+	background-repeat:no-repeat;
+	background-position:center 7px;
+	width:96px;
+	margin:auto;
+	font-size:10px;
+	color:#666666;
+	padding-top:51px;
+	cursor:pointer;
+	display:block;
+}
+
+
+#browseContainer .browseResultContainer .gameItem .bg
+{
+	position:absolute;
+	background:#000000;
+	filter:alpha(opacity=90);
+	-moz-opacity:.9;
+	opacity:.9;
+	width:260px;
+	height:130px;
+	display:none;
+}
+#browseContainer .browseResultContainer .gameItem:hover .bg{ display:block; }
+#browseContainer .browseResultContainer .gameItem:hover .over{ display:block; }
+#browseContainer .browseResultContainer .gameItem .live{ position:absolute; left:10px; top:10px; z-index:2; }

@@ -1,0 +1,32 @@
+table { border-collapse: collapse; border-spacing: 0; }
+td { padding:0; }
+
+.comboContainer{ float:left; }
+.comboContainer .comboBox{ height:25px; cursor:pointer; /*position:absolute;*/ z-index:101; }
+.comboContainer .comboBox div{ float:none; }
+.comboContainer .comboBox .left,.comboContainer .comboBox .middle,.comboContainer .comboBox .right{ background:url('../images/comboBox.png') no-repeat; height:25px; /*float:left;*/ vertical-align:top; }
+.comboContainer .comboBox .left{ width:4px; }
+.comboContainer .comboBox .middle{ vertical-align:top; background-repeat:repeat-x !important; line-height:25px; background-color:#E4E4E4; background-position:0px -25px; color:#666666; width:187px; }
+.comboContainer .comboBox .right{ width:14px; background-position:-4px 0px; }
+.comboContainer .comboBox .selectLabel{ float:none; line-height:25px; padding-left:5px; }
+
+.comboContainer .opened{ }
+.comboContainer .opened .selectLabel{ border-bottom:1px #C8C8C8 solid; }
+.comboContainer .opened .left,.comboContainer .opened .middle,.comboContainer .opened .right{ background:url('../images/comboBox-opened.png') no-repeat; height:25px; /*float:left;*/ }
+
+.comboContainer .opened .dropdown{ display:block; font-size:12px; /*padding-left:5px;*/ }
+.comboContainer .opened .left,.comboContainer .opened .right{ background:url('../images/comboBox-opened.png') no-repeat; height:26px; }
+.comboContainer .opened .middle{ background:url('../images/dropdown_mid.png'); height:26px; }
+.comboContainer .opened .right{ width:14px; background-position:-4px 0px; }
+
+.comboBox .dropdown{ display:none; width:100%; /*margin-top:2px;*/ position:absolute; }
+.comboBox .dropdown .dleft{ width:3px; background:url('../images/dropdown.png') repeat-y; }
+.comboBox .dropdown .dright{ width:3px;background:#E4E4E4; }
+.comboBox .dropdown .dmiddle{ background:#E4E4E4; width:208px; padding:3px 0 8px 7px; }
+.comboBox .dropdown .ddleft,.comboBox .dropdown .ddright{ width:3px; height:3px; line-height:3px; background:url('../images/dropdown.png') -3px 0px; }
+.comboBox .dropdown .ddright{ background-position:-8px 0px !important; }
+.comboBox .dropdown .ddmiddle{ background:#E4E4E4; }
+
+.comboBox .dropdown a{ display:block; height:24px; line-height:24px; color:#999999; }
+.comboBox .dropdown a:hover{ color:#666666; }
+.comboBox .dropdown .selected,.comboBox .dropdown .selected:hover{ color:#177BC6; }

@@ -1,0 +1,631 @@
+.videosContainer{ background:#FFFFFF; min-height:361px; padding:0 10px 0 20px; color:#666666; }
+.videosContainer .title{ font-size:15px; color:#333333; font-weight:bold; float:left; }
+.videosContainer .view
+{
+	background:#CCCCCC;
+	color:#666666;
+	width:618px;
+	height:30px;
+	line-height:30px;
+	font-weight:bold;
+	padding:0 3px 0 19px;
+	font-size:12px;
+}
+.videosContainer .view span{ margin:0 8px; color:#333333; }
+.videosContainer .view a{ color:#999999; margin:0 8px; }
+.videosContainer .view a:hover{ color:#666666; }
+.videosContainer .sort{ float:left; }
+.videosContainer .viewSelector{ line-height:30px; float:right; }
+.videosContainer .viewSelector div{ float:left; }
+.videosContainer .viewSelector div.btn{ margin:5px 2px 0 0; }
+.videosContainer .viewSelector div.selected{ width:20px; background-image:url('../images/view-selected.png'); }
+.videosContainer .viewSelector a.itemMode,.videosContainer .viewSelector a.lineMode{ margin:0; width:20px; height:20px; display:block; background-repeat:no-repeat; background-position:center center; }
+.videosContainer .viewSelector a.itemMode{ background-image:url('../images/mode-item.png'); }
+.videosContainer .viewSelector a.lineMode{ background-image:url('../images/mode-line.png'); }
+
+.videosContainer a.moreLabel{ font-size:12px; color:#167AC6; font-weight:bold; float:right; display:inline-block; margin:3px 20px 0 0; }
+.videosContainer a.moreLabel:hover{ text-decoration:underline; }
+.videosContainer .scoreOffValue{ display:none; text-align:center; font-size:30px; font-weight:bold; color:#cccccc; margin-top:70px; }
+.videosContainer .videoBox
+{ 
+	font-size:10px;
+	font-weight:bold;
+	margin-top:16px;
+}
+.videoBox .noresult
+{
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+.listView .noresult
+{
+    margin-top: 16px;
+}
+.videosContainer .videoItem
+{
+	width:120px;
+	margin:0 20px 12px 0;
+	float:left;
+	position:relative;
+}
+.videosContainer .videoItem .bg
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:#000000;
+	filter:alpha(opacity=80);
+	-moz-opacity:.8;
+	opacity:.8;
+	width:120px;
+	height:67px;
+	display:none;
+	cursor:pointer;
+}
+.videosContainer .videoItem .addBtn
+{
+	position:absolute;
+	width:24px;
+	height:23px;
+	background:url('../images/corner-add.png');
+	top:42px;
+	right:0px;
+	display:none;
+	cursor:pointer;
+}
+.videosContainer .videoItem a.playBtn
+{
+	position:absolute;
+	width:28px;
+	height:30px;
+	background:url('../images/play-video.png');
+	top:19px;
+	left:46px;
+	display:none;
+	z-index:3;
+}
+.videosContainer .videoItem:hover .bg{ display:block; }
+.videosContainer .videoItem:hover .addBtn{ display:block; }
+.videosContainer .videoItem:hover .playBtn{ display:block; }
+
+.videosContainer .videoItem .desc{ display:block; color:#666666; margin-top:5px; height:26px; overflow:hidden; }
+#videoBox
+{
+	width:1180px;
+	margin:auto;
+	background: #121212 url('../images/dark_bg.jpg') repeat;
+    padding-bottom: 30px;
+}
+.videosContainer .rightBox,#videoBox .rightBox
+{
+	float:right;
+	padding-right:74px;
+}
+
+#videoBoxInfo
+{
+	float:left;
+	width:640px;
+	margin:30px 50px 0 100px;
+}
+#videoBox .detailBox
+{
+	padding:16px 20px 0 20px;
+	position:relative;
+}
+#videoBox .snsBox
+{
+	position:absolute;
+	background:#000000;
+	border-bottom:1px #111111 solid; 
+	border-right:1px #111111 solid; 
+	top:0px;
+	right:0px;
+	padding:10px;
+}
+#videoBox .snsBox .twitter {
+    height: 20px;
+    width: 55px;
+}
+#videoBox .snsBox .facebook {
+    border: medium none;
+    height: 24px;
+    overflow: hidden;
+    width: 53px;
+}
+#videoBox .snsBox a.twitter,#videoBox .snsBox a.facebook,#videoBox .snsBox a.add
+{
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin-left:10px;
+}
+#videoBox .snsBox a.twitter{ background:url('../images/icon-share-twitter.png'); }
+#videoBox .snsBox a.facebook{ background:url('../images/icon-share-facebook.png'); }
+#videoBox .snsBox a.add{ background:url('../images/icon-share-add.png'); }
+#videoBox .detailBox .title
+{
+	font-size:19px;
+	font-weight:bold;
+	color:#FFFFFF;
+	width:385px;
+}
+#videoBox .detailBox .description
+{
+	font-size:11px;
+	color:#999999;
+	font-weight:bold;
+	line-height:16px;
+    margin:10px 0 14px 0;
+	width:600px;
+}
+#videoBox .detailBox .videoInfo
+{
+	color:#777777;
+	font-size:11px;
+    margin:2px 0;
+}
+#videoBox .detailBox .tagsBox a
+{
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+#relatedContainer
+{
+	color:#999999;
+	width:316px;
+	height:360px;
+	margin-top:36px;
+}
+
+#relatedContainer .title
+{
+	font-size:16px;
+	font-weight:bold;
+	font-style:normal;
+	margin-bottom:1px;
+}
+#relatedContainer .relatedItem
+{
+	width:100%;
+	padding:5px 0;
+	border-bottom:1px #242424 solid;
+	font-weight:bold;
+	cursor:pointer;
+	position:relative;
+	height: 67px;
+}
+#relatedContainer .selected .border{ display:block !important; }
+#relatedContainer .relatedItem .border
+{
+	border:3px #167AC6 solid;
+	position:absolute;
+	width:114px;
+	height:61px;
+	display:none;
+}
+#relatedContainer .relatedItem img
+{
+	float:left;
+	margin-right:10px;
+	border:0;
+}
+#relatedContainer .relatedItem .name
+{
+	color:#FFFFFF;
+	font-size:12px;
+	margin:0 0 3px 0;
+	max-height: 26px;
+    line-height: 13px;
+	overflow:hidden;
+}
+#relatedContainer .relatedItem .desc
+{
+    color: #999999;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 11px;
+    max-height: 33px;
+    overflow: hidden;
+}
+#relatedContainer .relatedItem .time
+{
+    bottom: 1px;
+    color: #999999;
+    font-size: 10px;
+    position: absolute;
+    right: 3px;
+    text-align: right;
+}
+.browseTab{
+	display: block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.browseTab div.left {
+    background: none;
+    width: 10px;
+}
+.browseTab div.middle {
+    background: none;
+    padding: 0 4px;
+}
+.browseTab div.right {
+    background: none;
+    width: 10px;
+}
+.browseTabSelect div.left {
+    background: url("../images/browseTab.png") no-repeat scroll 0 0 transparent;
+    width: 10px;
+}
+.browseTabSelect div.middle {
+    background: #E1E1E1 url("../images/arrow-schedule.png") no-repeat center 23px;
+    padding: 0 4px;
+}
+.browseTabSelect div.right {
+    background: url("../images/browseTab.png") no-repeat scroll -10px center transparent;
+    width: 10px;
+}
+.vodPage .browseTab:hover div.left, .vodPage .browseTab.catTab div.left {
+    background: url("../images/browseTab_mo.png") no-repeat scroll 0 0 transparent;
+}
+.vodPage .browseTab:hover div.middle, .vodPage .browseTab.catTab div.middle {
+    background-color: #FFF;
+}
+.vodPage .browseTab:hover div.right, .vodPage .browseTab.catTab div.right {
+    background: url("../images/browseTab_mo.png") no-repeat scroll -10px center transparent;
+}
+.vodPage .browseTabSelect div.middle {
+    background-image: none;
+}
+#videoByCategoryOverLay {
+    display: none;
+    background-color: #FFFFFF;
+    color: #666666;
+    font-weight: bold;
+    height: auto;
+    left: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 778px;
+    z-index: 100;
+}
+#videoByCategoryOverLay .closeBtn {
+    width: 15px;
+    height: 15px;
+    background: url(../images/x.png) no-repeat center center;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    cursor: pointer;
+}
+#videoByCategoryOverLay .closeBtn:hover {
+    background: url(../images/x_mo.png) no-repeat center center;
+}
+#videoByCategoryOverLay .noteamcategory {
+    height: auto;
+    float: none;
+    padding-bottom: 10px;
+    background: url(../images/cate_list_tab_bg.png) no-repeat center bottom;
+}
+#videoByCategoryOverLay .noteamcategory ul {
+    overflow: auto;
+    zoom:1;
+}
+#videoByCategoryOverLay .noteamcategory ul li {
+    float: left;
+    width: 106px;
+    line-height: 30px;
+}
+#videoByCategoryOverLay .noteamcategory ul li.longer {
+    width: 212px;
+}
+#videoByCategoryOverLay .noteamcategory a {
+    text-indent: 5px;
+}
+#videoByCategoryOverLay img {
+    border: 0;
+}
+#videoByCategoryOverLay a {
+    color: gray;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#videoByCategoryOverLay a:hover {
+    background-color: #EDEDED;
+}
+#videoByCategoryOverLay .teamcategory {
+    height: auto;
+    overflow: auto;
+    float: none;
+}
+#videoByCategoryOverLay .teamcategoryListTabContainer {
+    padding-top: 13px;
+    vertical-align: top;
+}
+#videoByCategoryOverLay .teamcategoryListTabContainer.leftContainer {
+    border-right: 1px solid #EDEDED;
+}
+#videoByCategoryOverLay .teamcategoryListTab {
+    width: 128px;
+    text-align: center;
+    border-right: 1px solid #EDEDED;
+}
+#videoByCategoryOverLay .teamcategoryListTab.last {
+    border: none;
+}
+#videoByCategoryOverLay .teamcategoryListTab .item {
+    font-size: 11px;
+    padding: 5px 0;
+    font-weight: normal;
+}
+#videoByCategoryOverLay .teamcategoryListTab .item span {
+    display: block;
+    line-height: 12px;
+}
+#videoByCategoryOverLay .conferenceTitle {
+    height: 52px;
+    width: 390px;
+    text-align: center;
+    border: 1px solid #EDEDED;
+    font-size: 16px;
+}
+#videoByCategoryOverLay .conferenceTitle.leftSide {
+    border-left: none;
+}
+#videoByCategoryOverLay .conferenceTitle.rightSide {
+    border-right: none;
+}
+#browseContainer .searchLabel:hover .dropdown{
+	display: block;
+	cursor: default;
+}
+#browseContainer .searchLabel:hover .left{
+	background: url("../images/whiteTab.png") no-repeat scroll 0 0 transparent;
+}
+#browseContainer .searchLabel:hover .middle{
+	background-color: #FFFFFF;
+    background-image: url("../images/icon-search.png") !important;
+    background-position: 0 14px !important;
+    background-repeat: no-repeat !important;
+    padding: 0 4px 0 13px;
+}
+#browseContainer .searchLabel:hover .right{
+	background: url("../images/whiteTab.png") repeat scroll -10px 0 transparent;
+}
+#browseContainer .searchLabel .dropdown{
+	background-color: #FFFFFF;
+    height: 95px;
+    position: absolute;
+    right: 0;
+    top: 41px;
+    width: 280px;
+    display:none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 5px solid #A9A7A5;
+}
+#browseContainer .searchLabel .dropdown a.blueBtn{
+	position: absolute;
+    right: 20px;
+    top: 30px;
+}
+#browseContainer .searchLabel .dropdown input.field{
+	height: 22px;
+	padding: 3px;
+    left: 20px;
+    position: absolute;
+    top: 30px;
+    width: 180px;
+    background-color: #E0E0E0;
+    border-color: #D7D7D7 #E4E4E4 #E4E4E4;
+    border-style: solid;
+    border-width: 1px;
+    color: #999999;
+}
+#browseContainer .searchLabel .dropdown a.blueBtn .left, #browseContainer .searchLabel .dropdown a.blueBtn .right {
+    width: 10px;
+    background: url("../images/blue-button.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 30px !important;
+}
+#browseContainer .searchLabel .dropdown a.blueBtn .left{
+
+}
+#browseContainer .searchLabel .dropdown a.blueBtn .middle{
+	background: none repeat scroll 0 0 #177BC7 !important;
+    line-height: 29px !important;
+}
+#browseContainer .searchLabel .dropdown a.blueBtn .right{
+	background-position: -10px 0px;
+}
+#browseContainer .searchLabel{
+	z-index: 10;
+}
+/*vod page start*/
+.vodPage #videoBox {
+    padding-bottom: 60px;
+}
+#playerContainer {
+    width:640px;
+    height: 360px;
+}
+.vodPage #relatedContainer {
+    height:260px;
+}
+.vodPage #relatedContainer .trackY .top, .vodPage #relatedContainer .trackY .bottom {
+    background-image: url("../images/scrollBgY_dark.png");
+}
+.vodPage #relatedContainer .thumbY .thumbtop, .vodPage #relatedContainer .thumbY .thumbbottom {
+    background-image: url("../images/scrollBgY_dark.png");
+}
+.vodPage #relatedContainer .trackY .middle {
+    background: #000000;
+}
+.vodPage #relatedContainer .thumbY .thumbmiddle {
+    background: #303030;
+}
+.browseTabContainer {
+    position: absolute;
+    top: -34px;
+    left: 100px;
+    z-index: 100;
+    /*padding-left: 100px;*/
+    /*height: 34px;*/
+    /*background: #121212 url('../images/dark_bg.jpg') repeat left center;*/
+    /*z-index: 100;*/
+}
+.vodPage #browseContainer .weekSelector {
+    float: left;
+    margin: 0 13px 0 80px;
+}
+.vodPage .videoItem .itemDesc .descList, .listTime{
+	display:none;
+}
+.vodPage .videoItem .itemDesc .gridTime{
+	display:block;
+}
+.vodPage .videosContainer {
+    background: #D3D3D3;
+    padding: 0 0 20px 100px;
+    min-height: 550px;
+}
+.vodPage .videosContainer .videoItem {
+    margin: 0 10px 12px 0;
+}
+.vodPage .videosContainer .listView{
+	margin-top:6px;
+}
+.vodPage .videosContainer .listView .videoItem{
+    margin-bottom: 0px;
+}
+
+.videosContainer .pageNav
+{
+	background:#CBCBCB;
+	padding:5px;
+	text-align: center;
+}
+.videosContainer .pageNav a
+{
+	color:#999999;
+	font-weight:bold;
+	font-size:12px;
+	padding:0 5px;
+}
+.videosContainer .pageNav a:hover{ color:#666666; }
+.videosContainer .pageNav a:hover.select{ color:#333333; }
+.videosContainer .pageNav .select{ color:#333333; }
+.videosContainer .pageNav a.left{
+	background: url("../images/pageNav-left.png") no-repeat scroll 1px 50% transparent;
+    float: none;
+    padding: 0 2px;
+}
+.videosContainer .pageNav a.right{
+	background: url("../images/pageNav-right.png") no-repeat scroll 6px 50% transparent;
+    float: none;
+    padding: 0 2px 0 12px;
+}
+.videosContainer .view a.select{
+	color:#333333;
+}
+/*change videoBox item style to "details_list", default is "icons"*/
+.listView .videoItem{
+	margin: 0;
+	border-bottom: 1px solid #C1C1C1;
+    padding: 10px 0;
+    width: 640px;
+}
+.listView .videoItem .bg
+{
+	position:absolute;
+	top:10px;
+	background:#000000;
+	filter:alpha(opacity=90);
+	-moz-opacity:.9;
+	opacity:.9;
+	width:120px;
+	height:67px;
+	display:none;
+	cursor:pointer;
+}
+.listView .videoItem a.playBtn
+{
+	position:absolute;
+	width:28px;
+	height:30px;
+	background:url('../images/play-video.png');
+	top:29px;
+	left:46px;
+	display:none;
+	z-index:3;
+}
+.listView .videoItem a.addBtn1
+{
+	background: url("../images/icon-share-add.png") repeat scroll 0 0 transparent;
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 29px;
+    width: 30px;
+    z-index: 3;
+}
+.listView .videoItem img{
+	float: left;
+    margin-right: 10px;
+}
+.listView .videoItem .itemDesc{
+	float: left;
+}
+.listView .videoItem .itemDesc .desc{
+    color: #177BC7;
+    display: block;
+    font-size: 13px;
+    height: 20px;
+    margin-top: 0;
+    overflow: hidden;
+}
+.listView .videoItem .itemDesc .descList{
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    height: auto;
+    line-height: 13px;
+    overflow: hidden;
+    width: 407px;
+}
+.listView .videoItem .itemDesc .listTime{
+	color: #999999;
+    font-size: 10px;
+    margin-top: 2px;
+    display:block;
+}
+.listView .videoItem a.addBtn1{
+	display:block;
+}
+.listView .videoItem .itemDesc .gridTime{
+	display: none;
+}
+.listView .videoItem .listClear{
+	clear:both;
+}
+.searchTitle {
+    color: #666;
+    float: left;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 18px;
+}
+.searchTitle .searchWord {
+    color: #666;
+}
+.searchTitle .searchResultCount {
+    color: #999;
+}
+/*vod page end*/

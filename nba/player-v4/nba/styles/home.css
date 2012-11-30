@@ -1,0 +1,72 @@
+#sgCover{ display:none; z-index:9; position:relative; width:1180px; margin:auto; /*top:-50px;*/ z-index:12; }
+#sgCover .black{ left:0px; top:0px; z-index:9; position:absolute; width:1180px; height:800px; background:#000000; filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6; }
+#sgCover #splashDialog{ z-index:13; left:218px; top:188px; position:absolute; width:747px; border-left:#5E5E5E solid 1px; border-right:#5E5E5E solid 1px; }
+#sgCover #splashDialog .header{ position:relative; background:url('../images/grey_header.jpg') repeat-x; height:51px; padding:1px 0 0 13px; }
+#sgCover #splashDialog .header a.closeBtn{ position:absolute; width:30px; height:30px; background:url('../images/close.png'); right:-15px; top:-15px; margin-top:0px; }
+#sgCover #splashDialog .header a.closeBtn:hover{ background:url('../images/close_mo.png'); }
+#sgCover #splashDialog .content{ background:#FFFFFF; padding:4px 7px 5px 33px; }
+#sgCover #splashDialog .content .cleft{ float:left; font-weight:bold; width:270px; }
+#sgCover #splashDialog .content .cright{ float:right; }
+#sgCover #splashDialog .content .cright .desc{ width:350px; color:#333333; font-weight:bold; font-size:18px; margin-top:45px; }
+#sgCover #splashDialog .content .cleft .title{ font-size:19px; margin:10px 0 7px 0; line-height:22px; }
+#sgCover #splashDialog .content .cleft table{ margin-bottom:7px; width:200px; }
+#sgCover #splashDialog .content .cleft td{ border-top:1px solid #E0E0E0; color:#666666; font-size:12px; width:258px; height:38px; }
+#sgCover #splashDialog .content .cleft td div{ margin:7px 0; padding-left:2px; }
+
+#slideShow
+{
+	width:1180px;
+	height:470px;
+	margin:auto;
+	position:relative;
+}
+#slideShow .videoInfoBox
+{
+	position:absolute;
+	top:221px;
+	left:20px;
+	background:url('../images/black80.png');
+	font-size:28px;
+	color:#FFFFFF;
+	width:371px;
+	font-weight:bold;
+}
+#slideShow .videoInfoBox .descBox
+{
+	padding:14px 20px 15px 18px;
+	line-height:30px;
+}
+#slideShow .videoInfoBox .bottomBox
+{
+	color:#CC0820;
+	font-size:20px;
+	background:url('../images/black64.png');
+	position:relative;
+	width:100%;
+}
+#slideShow .videoInfoBox .bottomBox td.name
+{
+	padding:10px 8px;
+	width:245px;
+}
+#liveIntroBox
+{
+	margin:48px 0 0 20px;
+	float:left;
+	width:420px;
+}
+#liveIntroBox .txt
+{
+	color:#999999;
+	width:135px;
+	font-size:10px;
+	font-weight:bold;
+	line-height:13px;
+	float:left;
+	margin-right:23px;
+}
+#liveIntroBox img
+{
+	margin-top:3px;
+	float:right;
+}

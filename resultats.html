@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NBA fan site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="application-name" content="EDOOBY"/>
+	<meta name="msapplication-TileColor" content="#000000"/>
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/slideshow.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/combobox.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/scroller.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/home.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/video.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/browse.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="nba/player-v4/nba/styles/datepicker.css" />
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/jquery.touchcarousel-1.0.min.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/jquery.mousewheel.3.0.4.min.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/jquery.ui.datepicker.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/config.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/common.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/scroller.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/combobox.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/home.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/schedule.js"></script>
+	<script type="text/javascript" src="nba/player-v4/nba/scripts/neulion/util.js"></script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', g_gaaccount]);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 1px 5;
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+  
+</script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html">NBA EDOOBY FAN SITE</a>
+        </div>
+      </div>
+    </div>
+	
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+        <div class="span3">
+        <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+              <li class="nav-header">Home</li>
+				<li><a href="index.html">Accueil</a></li>
+            <li class="nav-header">Matchs</li>  
+				<li><a href="calendrier.html">Calendrier</a></li>
+              <li class="nav-header">Stats</li>
+				<li><a href="stat.html">Statistiques</a></li>
+				<li><a href="joueur_de_la_nuit.html">Joueur du Jour</a></li>
+				<li><a href="classement.html">Classement</a></li>
+              <li class="nav-header">Photos du jour</li>
+				<li><a href="images.html">Images</a></li>
+			  <li class="nav-header">NBA</li>
+				<li><a href="http://www.nba.com/global/" class="teamNavGlobal">Global</a></li>
+				<li><a href="http://www.nba.com/dleague/" class="teamNavDleague">D-League</a></li>
+				<li><a href="http://www.wnba.com" class="teamNavWNBA">WNBA</a></li>
+				<li><a href="http://www.nba.com/global/storelinkhandler.html" class="teamNavStore" target="_blank">Store</a></li>
+			<li class="nav-header">Teams</li>
+				<li><a href="http://www.nba.com/hawks/">Atlanta</a></li>
+	            <li><a href="http://www.nba.com/heat/">Miami</a></li>
+	            <li><a href="http://www.nba.com/celtics/">Boston</a></li>
+	            <li><a href="http://www.nba.com/bucks/">Milwaukee</a></li>
+	            <li><a href="http://www.nba.com/nets/">Brooklyn</a></li>
+	            <li><a href="http://www.nba.com/timberwolves/">Minnesota</a></li>
+	            <li><a href="http://www.nba.com/bobcats/">Charlotte</a></li>
+	            <li><a href="http://www.nba.com/hornets/">New Orleans</a></li>
+	          	<li><a href="http://www.nba.com/bulls/">Chicago</a></li>
+	            <li><a href="http://www.nba.com/knicks/">New York</a></li>
+	           	<li><a href="http://www.nba.com/cavaliers/">Cleveland</a></li>
+	            <li><a href="http://www.nba.com/thunder/">Oklahoma City</a></li>
+	           	<li><a href="http://www.nba.com/mavericks/">Dallas</a></li>
+	            <li><a href="http://www.nba.com/magic/">Orlando</a></li>
+	           	<li><a href="http://www.nba.com/nuggets/">Denver</a></li>
+	            <li><a href="http://www.nba.com/sixers/">Philadelphia</a></li>
+	           	<li><a href="http://www.nba.com/pistons/">Detroit</a></li>
+	           	<li><a href="http://www.nba.com/suns/">Phoenix</a></li>
+	           	<li><a href="http://www.nba.com/warriors/">Golden State</a></li>
+	            <li><a href="http://www.nba.com/blazers/">Portland</a></li>
+	           	<li><a href="http://www.nba.com/rockets/">Houston</a></li>
+	            <li><a href="http://www.nba.com/kings/">Sacramento</a></li>
+	           	<li><a href="http://www.nba.com/pacers/">Indiana</a></li>
+	            <li><a href="http://www.nba.com/spurs/">San Antonio</a></li>
+	          	<li><a href="http://www.nba.com/clippers/">LA Clippers</a></li>
+	            <li><a href="http://www.nba.com/raptors/">Toronto</a></li>
+	           	<li><a href="http://www.nba.com/lakers/">LA Lakers</a></li>
+	            <li><a href="http://www.nba.com/jazz/">Utah</a></li>
+	           	<li class="last" style="border-bottom:0px;"><a href="http://www.nba.com/grizzlies/">Memphis</a></li>
+	            <li class="last" style="border-bottom:0px;"><a href="http://www.nba.com/wizards/">Washington</a></li>
+			
+		</ul>
+	    </div><!--/.well -->
+        </div><!--/span-->
+       
+
+		
+
+	   <div class="span9">
+          <div class="hero-unit">
+		  
+		  
+	
+            <h1>R&eacute;sultats</h1>
+            <p>.... </p>
+<script type="text/javascript">
+var qusername = "";
+var hasPremiumAccess = false;
+var isAuth = hasPremiumAccess;
+var isSub = false;
+var isBlocked = false;
+var locResource = "nba/player-v4/nba/";
+var baseurl = "#";
+var locale = "fr_FR";
+var buyGameCheck = false;
+
+$(".language").mouseover(function(){$(".language").addClass("whiteTab"); });
+$(".language").mouseout(function(){$(".language").removeClass("whiteTab"); });
+$(".userInfoBox").mouseover(function(){$(".userInfoBox").addClass("whiteTab"); });
+$(".userInfoBox").mouseout(function(){$(".userInfoBox").removeClass("whiteTab"); });
+var showRegForm=false;
+var showLoginForm=false;
+
+if($(".mobile .value").height() < 20) $(".mobile .value").css("line-height", "32px");
+else $(".mobile .value").css("padding-top", "1px");
+
+function showRegFrame(value)
+{
+	if(value)
+	{
+		$("#caButton a").addClass("whiteTab");
+		$("#caButton a").removeClass("blueBtn");
+		$("#caButton iframe").show();
+		$("#caButton .closeBtn").show();
+		if($("#caButton iframe").attr("src") == undefined || $("#caButton iframe").attr("src") == "")
+		{
+			var u = location.href;
+			if(window.g_refreshUrl!=null)
+				u = g_refreshUrl;
+			else
+			{
+				if(u.indexOf("#_=_")!=-1)
+					u = u.substr(0, u.indexOf("#_=_"));
+				if(u.indexOf("?")!=-1)
+					u = u.substr(0, u.indexOf("?"));
+			}
+		}
+	}
+	else
+	{
+		$("#caButton a").addClass("blueBtn");
+		$("#caButton a").removeClass("whiteTab");
+		$("#caButton iframe").hide();
+		$("#caButton .closeBtn").hide();
+	}
+}
+function turnOnScore(){ $(".shscore li:eq(0)").click(); }
+function turnOffScore(){ $(".shscore li:eq(1)").click(); }
+g_prefs.showScores = (getCookieByName("showScore") == "false") ? false : true;
+jQuery(document).ready(function($) {
+	$(".shscore li").click(function(){
+		g_prefs.showScores = $(this).attr("name") == "on" ? true : false;
+		showhideScore(false);
+		addCookie('showScore', g_prefs.showScores);
+	});
+	showhideScore(true);
+});
+if(g_prefs.favorite == undefined && getCookieByName("favorite")!=null) g_prefs.favorite = getCookieByName("favorite");
+
+	
+	
+
+$.ajaxSetup({ cache: true });
+</script>
+
+<script>
+	var g_appsDownload = null;
+	if(getCookieByName("nbatvapps")==null)
+	{
+		var ua = navigator.userAgent.toLowerCase();
+		
+		updateAppsDialog(ua);
+	}
+</script>
+<script type="text/javascript">
+baseurlSecure = "#";
+g_gamescheck = false;
+g_needCache = true;
+var currentDate = new Date(new Date().setDate(new Date().getDate()-1));
+if(currentDate.getHours() < 12) today = new Date(currentDate.getTime() - 24 * 3600 * 1000);
+else today = new Date(currentDate.getTime());
+today.setHours(2,0,0,0);
+var g_refreshUrl = "#";
+
+jQuery(document).ready(function($) {
+	$teamBox = $(".teamBox");
+	$teamBox.mouseover(function(){$(".whiteTab", $teamBox).removeClass("mouseup"); });
+	$teamBox.mouseout(function(){$(".whiteTab", $teamBox).addClass("mouseup"); });
+	
+	jQuery('div.calendarSelector').datepicker({
+		dateFormat: 'yy/m/d',
+		prevText: 'Prev',
+		nextText: 'Next',
+		monthNames: ['Janvier','F&eacute;vrier','Mars','Avril','Mai','Juin', 'Juillet','Août','Septembre','Octobre','Novembre','D&eacute;cembre'],
+		dayNamesMin: ['DIM', 'LUN', 'MAR', 'MER', 'JEU', 'VEN', 'SAM'],
+		dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+		firstDay: 0,
+		onSelect: function(dateText, inst) {
+			var od = new Date(dateText.split("/")[0], dateText.split("/")[1]-1, dateText.split("/")[2]);
+			var sd = od.getDay() == 0 ? 6 : od.getDay() - 1;
+			var nd = getFirstDayOfWeek(od);
+			hasScheduled = false;
+			if(firstDate != undefined && compareDate(firstDate,nd))
+				showGamesByDate(sd);
+			else
+			{
+				selectedDay = sd;
+				firstDate = nd;
+				var ret = checkDatePosition(firstDate);
+				updateCalendar(nd.getFullYear(), nd.getMonth() + 1, nd.getDate(), ret[0], ret[1]);
+				getSchedule(nd.getFullYear(), nd.getMonth() + 1, nd.getDate());
+			}
+		},
+		minDate: new Date(minDate),
+		maxDate: new Date(maxDate)
+	});
+	defaultDate = today;
+	if(scheduleDefaultDate != null) defaultDate = new Date(Math.max(today.getTime(), scheduleDefaultDate.getTime()));
+	var date = getFirstDayOfWeek(defaultDate);
+	selectedDay = defaultDate.getDay() == 0 ? 6 : defaultDate.getDay() - 1;
+	if(defaultDate > maxDate)
+	{
+		date = getFirstDayOfWeek(maxDate);
+		selectedDay = maxDate.getDay() == 0 ? 6 : maxDate.getDay() - 1;
+	}
+	getSchedule(date.getFullYear(), date.getMonth() + 1, date.getDate());
+	getWhatsNew();
+});	
+</script>
+
+<script type="text/javascript">
+	var carouselInstance;
+	function getDL()
+	{
+		$.getScript(dlSrc, function()
+		{
+			generateSlideshow();
+			/*setTimeout(function() {
+	            getDL();
+	        }, g_dl.refresh * 10);*/
+		});
+	}
+	
+	function generateSlideshow()
+	{
+		if(carouselInstance)
+		{
+			if(carouselInstance.autoplayTimer)
+				clearInterval(carouselInstance.autoplayTimer);
+		}
+		$("#carousel-single-image").html('<ul class="touchcarousel-container"></ul>');
+		$.each(g_dl.dl,function(key, val){
+			var valid = true;
+			var cc = "FR";
+			if(val.geoAllow!=null && val.geoAllow.length>0)
+			{
+				if(val.geoAllow.indexOf(cc)==-1)
+					valid = false;
+			}
+			if(val.geoDeny!=null && val.geoDeny.length>0)
+			{
+				if(val.geoDeny.indexOf(cc)!=-1)
+					valid = false;
+			}
+			if(valid)
+			{
+				var link = "";
+				var title = "";
+				var description = "";
+				//var btnTxt = "Regarder";
+				switch(val.type)
+				{
+					case 0:
+						//link = "/nba/video/" + val.program.slug;
+						title = val.program.title;
+						description = val.program.description;
+						break;
+					case 1:
+						//var statusStr = "Direct : ";
+						if(val.game.id.length == 8) val.game.id = "00" + val.game.id;
+						//link = baseurl + 'games/' + formatDateToArray(val.game.gameDate)[0] + formatDateToArray(val.game.gameDate)[1] + formatDateToArray(val.game.gameDate)[2] + '/' + val.game.visitor + val.game.home + '/' + val.game.id;
+						title = teams[val.game.visitor].name + " contre. " + teams[val.game.home].name;
+						description = title;
+						break;
+				}
+				if(val.link!=null && val.link.length>0)
+					link = val.link;
+				if(val.title!=null && val.title.length>0)
+					title = val.title;
+				if(val.description!=null && val.description.length>0)
+					description = val.description;
+				
+			}
+		});
+		carouselInstance = $("#carousel-single-image").touchCarousel({
+			pagingNav: (g_dl.dl.length > 1),
+			scrollbar: false,
+			directionNavAutoHide: false,
+			itemsPerMove: 1,
+			loopItems:false,				
+			directionNav: false,
+			autoplay:true,
+			autoplayDelay: 10000,
+			useWebkit3d: false,
+			transitionSpeed: 1000
+		}).data('touchCarousel');
+	}	
+	jQuery(document).ready(function($) { getDL(); });
+ </script>
+<div id="browseContainer">
+	<div class="browseSelectorContainer">
+		<div class="weekSelector"></div>
+		<div id="calendarSelector" class="calendarSelector">
+			<div class="middle">Calendrier</div>
+		</div>
+		<div class="viewLabels">
+			<div class="teamBox">
+				
+			
+		
+
+				
+
+<script type="text/javascript">
+function changed(e, key, item){
+	$(".favTeamBox").removeClass("noFav");
+	$(".teamName").html(item.city + " " + item.name);
+	$(".teamLogo").attr("src", locResource + "images/teams/" + key + ".png");
+	g_prefs.favorite = key;
+	if(isSub)
+		invokeSyncCall("/nba/servlets/","prefupdate","favorite="+key, function(){});
+	else
+		addCookie('favorite', g_prefs.favorite);
+}
+jQuery(document).ready(function($) {
+	$(".comboContainer").bind("changed", changed);
+	var t = {};
+	$.each(teams,function(key, val){
+		if(val.division != "") t[key] = val;
+	});
+	var obj = { dropHeight:165, dataProvider:t, showScrollBar:true, labelField:["city","name"] };
+	if(g_prefs.favorite != null) obj.selectedItem = teams[g_prefs.favorite];
+	$(".comboContainer").combobox(obj);
+	$dropdown = $(".teamDropdown");
+	$.each(teams,function(key, val){
+		if(val.division != "")
+		{
+			var teamName = val.city + " " + val.name;
+			var teamStr = '<div class="teamIco"><img alt="'+ key +'" src="' + locResource + 'images/teams/' + key + '.png" /><br/><span>' + teamName + '</span></div>';
+			var divistion = val.division.toLowerCase();
+			$("."+divistion+":eq(0)").append(teamStr);
+		}
+	});
+	$(".showAll").click( function() {
+		filterByTeam("");
+		$("#teamLabel").html($("#label_team").html());
+	});
+	$(".teamIco").click( function() {
+		var teamCode = $(this).find("img").attr("alt");
+		filterByTeam(teamCode);
+		$("#teamLabel").html($("#label_team").html()+ "(" + teamCode + ")");
+		$(".teamDropdown").css("display", "none");
+		setTimeout(function() {
+			$(".teamDropdown").css("display", "");
+		}, 100);
+	});
+	if(g_prefs.favorite != null)
+	{
+		var teamName = teams[g_prefs.favorite].city + " " + teams[g_prefs.favorite].name;
+		$(".teamLogo", $dropdown).attr("src", "nba/player-v4/nba/images/teams/" + g_prefs.favorite + ".png");	
+		$(".teamName", $dropdown).html(teamName);
+	}
+	else
+		$(".favTeamBox", $dropdown).addClass("noFav");
+});
+</script>				
+			</div>
+		</div>
+	</div>
+	
+	<div class="browseResultContainer"></div>
+	
+	
+</div>
+	
+<div style="display:none;">
+<div id="ampm_am">Matin</div>
+<div id="ampm_pm">Soir</div>
+<div id="blackout_txt">NON DISPONIBLE</div>
+<div id="calendar_day_min_0">DIM</div>
+<div id="calendar_day_min_1">LUN</div>
+<div id="calendar_day_min_2">MAR</div>
+<div id="calendar_day_min_3">MER</div>
+<div id="calendar_day_min_4">JEU</div>
+<div id="calendar_day_min_5">VEN</div>
+<div id="calendar_day_min_6">SAM</div>
+<div id="calendar_month_min_1">Jan</div>
+<div id="calendar_month_min_2">F&eacute;v</div>
+<div id="calendar_month_min_3">Mar</div>
+<div id="calendar_month_min_4">Avr</div>
+<div id="calendar_month_min_5">Mai</div>
+<div id="calendar_month_min_6">Juin</div>
+<div id="calendar_month_min_7">Juil</div>
+<div id="calendar_month_min_8">Août</div>
+<div id="calendar_month_min_9">Sep</div>
+<div id="calendar_month_min_10">Oct</div>
+<div id="calendar_month_min_11">Nov</div>
+<div id="calendar_month_min_12">D&eacute;c</div>
+<div id="no_games_on_this_date">Pas de matchs à cette date</div>
+<div id="game_buy_game">Acheter ce match</div>
+<div id="game_final">FINAL</div>
+<div id="game_has_ended">Le match est terminé</div>
+<div id="game_has_not_begun">Le match n'a pas commencé</div>
+<div id="game_live">DIRECT</div>
+<div id="game_or">ou</div>
+<div id="game_ot">OT</div>
+<div id="game_preview">Essai</div>
+<div id="game_recap">Récapitulatif</div>
+<div id="game_set_reminder">Définir un rappel</div>
+<div id="game_single_game">Match unique</div>
+<div id="game_watch_game">Regarder le match</div>
+<div id="game_watch_this_game">Regarder ce match</div>
+<div id="label_team">Équipe</div>
+</div>
+
+	
+	
+		
+			
+			
+			
+				<script type="text/javascript">var axel = Math.random() + "";var a = axel * 10000000000000;document.write('<iframe src="http://fls.doubleclick.net/activityi;src=3542852;type=nbala604;cat=nbatv597;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');</script><noscript><iframe src="http://fls.doubleclick.net/activityi;src=3542852;type=nbala604;cat=nbatv597;ord=1;num=1?" width="1" height="1" frameborder="0" style="display:none"></iframe></noscript>
+			
+			
+			
+			
+			
+			
+				
+	
+			
+			
+			
+
+      <hr>
+
+      <footer>
+        <p>&copy; edooby</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+
+
+
+
+			
+			
+				
+	
+	
+	
+  </body>
+</html>

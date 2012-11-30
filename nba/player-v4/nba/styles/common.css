@@ -1,0 +1,197 @@
+body{ margin:0px; padding:0px; background:#000000; font-family:Arial; font-size:13px; -webkit-text-size-adjust:none; }
+div{ z-index:1; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { padding:0; }
+.clearDiv{ clear:both; float:none; height:0px; }
+a{ text-decoration:none; }
+a:hover{ text-decoration:none; }
+
+a.blueBtn,a.grayBtn{ text-decoration:none !important; float:left; cursor:pointer; font-family:Arial; color:#FFFFFF; font-size:12px; font-weight:bold; display:block; height:30px; text-align:center; }
+a.blueBtn .left,a.blueBtn .right,a.blueBtn .middle,a:hover.blueBtn .left,a:hover.blueBtn .right,a:hover.blueBtn .middle{ background:url('../images/blue-button.png') no-repeat; height:30px !important; float:left; display:inline-block; }
+a.blueBtn .left,a.blueBtn .right{ width:10px; }
+a.blueBtn .middle{ background:#177BC7; padding:0 5px; line-height:29px !important; }
+a.blueBtn .right{ background-position:-10px 0px; }
+a:hover.blueBtn .left{ background-position:0px -30px; }
+a:hover.blueBtn .middle{ text-decoration:none !important; background:url('../images/blue-button-mid_mo.png'); }
+a:hover.blueBtn .right{ background-position:-10px -30px; }
+
+a.grayBtn { color:#CCCCCC; font-size:10px; height:25px; }
+a.grayBtn .left,a.grayBtn .right,a.grayBtn .middle{ background:url('../images/gray-btn.png') no-repeat; height:25px; float:left; }
+a.grayBtn .left,a.grayBtn .right{ width:10px; }
+a.grayBtn .middle{ background:#1D1D1D; line-height:25px; }
+a.grayBtn .right{ background-position:-10px 0px; }
+
+.bigBlueBtn .left,.bigBlueBtn .right,.bigBlueBtn .middle,.bigBlueBtn:hover .left,.bigBlueBtn:hover .right,.bigBlueBtn:hover .middle{ text-align:center; color:#FFFFFF; background:url('../images/blue-button-big.png') no-repeat; height:42px; }
+.bigBlueBtn .left,.bigBlueBtn .right{ width:10px; }
+.bigBlueBtn .middle{ background:#177BC7; }
+.bigBlueBtn .right{ background-position:-10px 0px; }
+.bigBlueBtn:hover .left{ background-position:0px -42px; }
+.bigBlueBtn:hover .middle{ background:url('../images/blue-button-big-mid_mo.png'); }
+.bigBlueBtn:hover .right{ background-position:-10px -42px; }
+
+.whiteTab .left,.whiteTab .middle,.whiteTab .right{ height:41px; float:left; color:#666666; font-weight:bold; line-height:36px; }
+.whiteTab .left{ background:url('../images/whiteTab.png') no-repeat; width:10px; }
+.whiteTab .middle{ background-color:#FFFFFF; background-repeat:no-repeat; }
+.whiteTab .right{ background:url('../images/whiteTab.png') -10px 0px; width:10px; }
+
+.snsBox a.twitter,.snsBox a.facebook,.snsBox a.add,a.shareFav
+{
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin-left:10px;
+}
+a.shareFav{ background:url('../images/icon-share-fav.png'); }
+.snsBox a.twitter{ background:url('../images/icon-share-twitter.png'); }
+.snsBox a.facebook{ background:url('../images/icon-share-facebook.png'); }
+
+
+.adBox
+{
+	font-size:9px;
+	font-style:italic;
+	color:#444444;
+	margin-top:17px;
+	font-family:Arial;
+}
+.adBox table
+{
+	margin-top:2px;
+}
+.adBox table div
+{
+	color:#999999;
+	font-size:13px;
+	font-weight:bold;
+	font-style:normal;
+	width:170px;
+	margin:auto;
+	text-align:left;
+	line-height:17px;
+}
+
+
+
+#freeBox
+{
+	background:#CCCCCC;
+	color:#333333;
+	border-bottom:5px #C4C4C4 solid;
+	padding:10px;
+	font-size:11px;
+	font-family:Arial;
+	font-style:normal;
+	font-weight:bold;
+	margin-top:21px;
+}
+#freeBox img
+{
+	float:left;
+	margin-right:11px;
+}
+#freeBox .title{ color:#336600; float:none; font-size:11px; width:160px; }
+#freeBox .txt{ width:160px; font-size:10px; position:relative; }
+#freeBox .txt .time{ position:absolute; font-size:10px; right:0px; color:#545454; font-style:normal; }
+
+#player{
+	width:1180px;
+	height:800px;
+	margin:auto;
+	background-color:#333333;
+}
+
+#vod{ width:640px; height:360px; }
+.installPlayer{ color:#cccccc; font-size:17px; text-align:center; font-weight:normal; }
+.installPlayer a{color:#cccccc; }
+.installPlayer a:hover{ text-decoration:underline; }
+
+ul,li{
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+
+.left{ float:left; }
+.right{ float:right; }
+
+#mainContainer
+{
+	width:1180px;
+	margin:auto;
+}
+
+.demoBox
+{
+	background:url('../images/demo-bg.png') repeat-x;
+	position:absolute;
+	top:18px;
+	right:20px;
+	padding:11px 20px 10px 15px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+}
+.demoBox img{ cursor:pointer; float:left; }
+.demoBox div{ margin:5px 0 0 20px; float:left; line-height:19px; }
+.demoBox a,.demoBox a:hover{ text-decoration:none; }
+#cover,#rCover{ display:none; z-index:10; position:relative; width:1180px; margin:auto; }
+#cover .black,#rCover .black{ left:0px; top:0px; z-index:9; position:absolute; width:1180px; height:800px; background:#000000; filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6; }
+#cover #demo{ z-index:9; position:absolute; width:854px; background:#000000; top:89px; left:170px; }
+#cover #demo .closeBox{ position:relative; }
+#cover #demo .closeBox a.closeBtn{ position:absolute; right:8px; top:7px; background:url('../images/x.png'); width:11px; height:12px; }
+#cover #demo .closeBox a.closeBtn:hover{ background:url('../images/x_mo.png'); }
+#cover #demo .player{ float:left; width:380px; height:214px; margin:20px; background:url('../images/demo2.jpg'); cursor:pointer; }
+#cover #demo .infoBox{ float:left; border-left:1px #231F1E solid; padding-bottom:30px; }
+#cover #demo .title{ font-size:19px; color:#FFFFFF; margin:15px 0 0 20px; }
+#cover #demo .desc1{ color:#666666; margin:5px 20px 22px 20px; font-size:11px; font-weight:bold; }
+#cover #demo .package{ color:#999999; padding:0 18px; float:left; }
+#cover #demo .package .pDesc{ min-height:100px; }
+#cover #demo .package p{ margin:5px 0; font-size:9px; font-weight:bold; }
+#cover #demo .register{ width:178px; }
+#cover #demo .premium{ border-left:1px #231F1E solid; width:178px; }
+#cover #demo .package .title{ color:#CD0722; font-size:14px; font-weight:bold; margin:0; }
+
+.closeBtn{ margin-top:7px; background:url('../images/x.png'); width:11px; height:12px; float:right; cursor:pointer; }
+.closeBtn:hover{ margin-top:7px; background:url('../images/x_mo.png'); width:11px; height:12px; float:right; cursor:pointer; }
+
+#reminderBox{ font-size:12px; font-weight:bold; z-index:10; width:340px; background:#000000; position:absolute; padding:0 22px; left:398px; top:110px; border:1px #999999 solid; }
+#reminderBox a.closeBtn{ position:absolute; right:-15px; top:7px; margin-top:0px; }
+#reminderBox .title{ color:#FFFFFF; font-size:19px; margin-bottom:6px; }
+#reminderBox .desc{ color:#666666; margin-bottom:15px; }
+#reminderBox ul{ margin-left:6px; }
+#reminderBox ul li{ position:relative; line-height:25px; color:#999999; height:25px; cursor:pointer; background:url('../images/dot-white.png') no-repeat left center; padding-left:34px; font-size:12px; margin-bottom:16px; }
+#reminderBox ul li.selected{ background-image:url('../images/dot-blue.png'); }
+#reminderBox ul li input{ position:absolute; right:0px; background:url('../images/inputBg.png') no-repeat; width:245px; line-height:23px; height:25px; border:none; }
+#reminderBox .cancelBtn{ float:left; margin:6px 18px 0 0; color:#FFFFFF; text-decoration:underline; cursor:pointer; font-size:11px; }
+#reminderBox .moretxt{ border-top:1px solid #2A2625; margin-top:20px; color:#666666; padding:17px 0; }
+#reminderBox .moretxt a{ color:#167CC7; text-decoration:underline; }
+
+div.button_package
+{
+	height:48px;
+	width:243px;
+	background-image:url(../images/account/Button.png);
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	font-size:12pt;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+div.button_freetrial
+{
+	height:48px;
+	width:243px;
+	background-image:url(../images/account/blue_box.png);
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	font-size:12pt;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#appsCover{ display:none; position:relative; width:1180px; margin:auto; /*top:-50px;*/ z-index:15;}
+#appsCover .black{ left:0px; top:0px; z-index:9; position:absolute; width:1180px; height:800px; background:#000000; filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6; }
+#appsCover #appsDialog{z-index:16; left:290px; top:150px; position:absolute; width:600px;}
+#appsCover #appsDialog a.closeAppsBtn{ position:absolute; width:59px; height:57px; background:url('../images/closeapps.png'); right:-29px; top:-25px; margin-top:0px; }

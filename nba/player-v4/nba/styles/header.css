@@ -1,0 +1,117 @@
+#header{ width:1180px; margin:auto; }
+div#globalTeamNavWrapper{background:#000; width:100%; height:20px; position:relative; z-index:1000; text-align:center; padding-top:10px; }
+div#globalTeamNavWrapper img{border:0px;}
+div#globalTeamNavWrapper ul#globalTeamNav{padding:0px; list-style:none; text-align:center; margin:0px auto 0px auto !important; }
+ul#globalTeamNav li{position:relative; z-index:1; height:16px; line-height:16px;  margin:0 7px; }
+ul#globalTeamNav li,
+ul#globalTeamNav li ul li,
+ul#globalTeamNav li ul li ul li{float:left; display:inline; text-align:left;}
+ul#globalTeamNav li ul li{margin:0px; height:auto; line-height:auto;}
+ul#globalTeamNav li ul{margin:0px; padding:0px; list-style:none;}
+
+ul#globalTeamNav li a{display:block; height:16px; float:left; font-weight:bold; font-size:11px; color: #888; text-decoration:none; }
+ul#globalTeamNav li.logo a{padding-left:11px; margin:0 53px 0 13px; background: url(../images/arrow-lef-top-menu.png) no-repeat center left; color:#ccc;}
+ul#globalTeamNav li a.teamNavGlobal,
+ul#globalTeamNav li a.teamNavTeams{padding-right:11px; background: url(../images/arrow-down-top-menu.png) no-repeat center right;}
+
+ul#globalTeamNav li ul#teamSubNav{display:none; position:absolute; top:16px; left:-16px; width:230px; height:500px; z-index:999; border-top:0px; }
+ul#globalTeamNav li ul#globalSubNav{display:none; position:absolute; top:16px; left:-16px; z-index:999; width:230px; height:525px;}
+ul#globalTeamNav li ul li a{background:#000; width:230px; height:24px; line-height:24px; padding:0px;  margin:0px; text-indent:10px; overflow:hidden; border-bottom:1px solid #242323;}
+ul#globalTeamNav li ul li a:hover{background: #242323; color:#ccc;}
+ul#globalTeamNav li ul li.teamHDR{background:#000; color:#888; font-weight:bold; font-size:12px; text-transform:uppercase; border-bottom:0px; width:230px; height:428px; overflow:hidden; text-indent:10px;}
+ul#globalTeamNav li ul li ul{width:230px; position:relative; top:0px;}
+ul#globalTeamNav li ul li ul li{width:115px; line-height:24px; height:24px; overflow:hidden; margin:0px; border-bottom:1px solid #242323;}
+ul#globalTeamNav li ul li ul li.last{border-bottom:0px !important;}
+ul#globalTeamNav li ul li a{font-size:12px; text-decoration:none; font-weight:bold; text-transform:none; line-height:24px; margin:0px;}
+ul#globalTeamNav li ul li a:hover{}
+ul#globalTeamNav li ul#teamSubNav li ul a{width:115px;}
+
+ul#globalTeamNav li:hover ul#teamSubNav,
+ul#globalTeamNav li.sfhover ul#teamSubNav,
+ul#globalTeamNav li:hover ul#globalSubNav,
+ul#globalTeamNav li.sfhover ul#globalSubNav{display:block;}
+
+#header .menuNav{ background:url('../images/headerBg.gif') repeat-X; height:50px; }
+
+div.logoGametime{ background:url('../images/logogametime.png') no-repeat; width:171px; height:26px; display:inline-block; margin:12px 5px 0 15px; float:left; }
+div.logoVideo{ background:url('../images/logovideo.png') no-repeat; width:171px; height:26px; display:inline-block; margin:12px 5px 0 15px; float:left; }
+div.logoLp{ background:url('../images/logolp.png') no-repeat; width:171px; height:26px; display:inline-block; margin:12px 5px 0 15px; float:left; }
+div.logoNbatv{ background:url('../images/logonbatv.png') no-repeat; width:171px; height:26px; display:inline-block; margin:12px 5px 0 15px; float:left; }
+
+a.menuItem,a.menuItem:hover{ height:36px; float:left; font-size:13px; position:relative; margin-top:14px; text-decoration:none; }
+a.menuItem div{ visibility:hidden; float:left; height:36px; color:#AAAAAA; font-weight:bold; line-height:36px; cursor:pointer; }
+a.menuItem div.left{ background:url('../images/header-tab-left.png') no-repeat; width:10px; }
+a.menuItem div.middle{ padding:0 6px; visibility:visible; text-align:center; min-width:60px; }
+a.menuItem div.right{ background:url('../images/header-tab-right.png') no-repeat; width:10px; }
+a.menuItem div.cover{ background:url('../images/header-tab-pattern-2.png') no-repeat; width:82px; position:absolute; left:0px; top:0px; }
+.menuNav a.selected div{ cursor:default; }
+.menuNav .selected div.left,.menuNav .selected div.right,.menuNav .selected div.cover{ visibility:visible; }
+.menuNav .selected div.middle{ background:#000000; border-bottom:3px #CD0720 solid; height:33px; }
+
+a.mobile,a.mobile:hover{ margin:9px 9px 0 0; height:32px; float:left; text-decoration:none; }
+a.mobile div{ float:left; height:32px; color:#AAAAAA; font-weight:bold; /*line-height:32px;*/ font-size:11px; cursor:pointer; }
+a.mobile div.middle{ background:url('../images/mobile_mid.png') repeat-x; padding:0 9px 0 4px; max-width:125px; }
+a.mobile div.left{ background:url('../images/mobile.png') no-repeat; width:40px; }
+a.mobile div.right{ background:url('../images/mobile.png') no-repeat -40px 0px; width:10px; }
+a.mobile:hover div.middle,a.mobile:hover div.left{ background-position:0px -32px; }
+a.mobile:hover div.right{ background-position:-40px -32px; }
+
+#header .menuNav #loginBox{ z-index:11; position:relative; float:left; margin-top:9px; }
+#header .menuNav #loginBox iframe{ position:absolute; display:none; top:41px; border:none; border-bottom:5px #CCCCCC solid; }
+#header .menuNav #caButton iframe{ width:600px; height: 308px; right:-60px; height:465px; }
+#header .menuNav #loginButton iframe{ height: 308px; right:-60px; width: 558px; }
+#header .menuNav .closeBtn{ display:none; position:absolute; right:-50px; top:50px; background:url('../images/x.png'); width:11px; height:12px; }
+
+#header .menuNav #caButton{ cursor:pointer; float:left; }
+#header .menuNav #loginButton{ margin:0px 0px 0px 5px; cursor:pointer; float:left; }
+#header .menuNav #loginBox .whiteTab .middle{ font-size:12px; padding:0 5px; line-height:30px; }
+#header .menuNav #loginBox .blueBtn{ margin-top:1px; }
+#header .menuNav #loginBox .whiteTab{ font-size:12px; font-weight:bold; display:block; height:41px; }
+
+#header .menuNav .userBox{ z-index:11; float:left; color:#777777; font-size:11px; font-weight:bold; padding:0 5px; border-left:1px #2C2A2B solid; margin-left:9px; }
+#header .menuNav .userBox .userInfoBox{ margin-top:9px; cursor:pointer; position:relative; z-index:100; }
+#header .menuNav .userBox .userInfoBox .left,#header .menuNav .userBox .userInfoBox .right{ width:10px; height:41px; float:left; }
+#header .menuNav .userBox .userInfoBox .middle{ background-image:url('../images/arrow-user.png');background-repeat:no-repeat;background-position:right 14px;padding-right:16px;line-height:34px;float:left; }
+#header .menuNav .userBox .userInfoBox img{ float:left; margin:4px 10px 0 0; }
+#header .menuNav .userBox .userInfoBox .txt{ float:left; white-space:nowrap; color:#777777; line-height:31px; max-width:117px; max-height:31px; overflow:hidden; }
+#header .menuNav .userBox .userInfoBox .txt .username{ color:#AAAAAA; white-space:nowrap; }
+#header .menuNav .userBox .userInfoBox:hover .txt{ color:#999999; }
+#header .menuNav .userBox .userInfoBox:hover .txt .username{ color:#666666; }
+#header .menuNav .userBox .dropdown{ display:none; white-space:nowrap; height:auto; position:absolute; background:#FFFFFF; border-bottom:5px #cccccc solid; top:41px; left:0px; z-index:100; padding:10px; }
+#header .menuNav .userBox .userInfoBox:hover .dropdown{ display:block; }
+#header .menuNav .userBox .dropdown .last{ border:none; }
+#header .menuNav .userBox .dropdown a{ display:block; color:#666666; border-bottom:1px #EBEBEB solid; line-height:31px; padding:0 9px; }
+#header .menuNav .userBox .dropdown a:hover{ color:#006BB6; }
+
+#header .menuNav .userBox .dropdown .blueBtn .left,.blueBtn .right,.blueBtn .middle,.blueBtn:hover .left,.blueBtn:hover .right,.blueBtn:hover .middle{ text-align:center; color:#FFFFFF; background:url('../images/blue-button.png') no-repeat; height:30px; }
+#header .menuNav .userBox .dropdown .blueBtn .left,.blueBtn .right{ width:10px; }
+#header .menuNav .userBox .dropdown .blueBtn .middle{ background:#177BC7; }
+#header .menuNav .userBox .dropdown .blueBtn .right{ background-position:-10px 0px; }
+#header .menuNav .userBox .dropdown .blueBtn:hover .left{ background-position:0px -30px; }
+#header .menuNav .userBox .dropdown .blueBtn:hover .middle{ background:url('../images/blue-button-mid_mo.png'); }
+#header .menuNav .userBox .dropdown .blueBtn:hover .right{ background-position:-10px -30px; }
+
+#header .menuNav .language{ z-index:11; cursor:pointer; float:left; color:#AAAAAA; font-size:11px; font-weight:bold; border-left:1px #2C2A2B solid; margin-top:9px; position:relative; z-index:100; }
+#header .menuNav .language:hover .dropdown{ display:block; }
+#header .menuNav .language .left,#header .menuNav .language .right{ width:10px; height:41px; float:left; }
+#header .menuNav .language .middle{ background-image:url('../images/arrows_language.png');background-repeat:no-repeat;background-position:right 12px;padding:0 10px 0 5px;line-height:34px;float:left; }
+#header .menuNav .language .dropdown { display:none; height:auto; padding:12px 20px 12px 20px; background:#FFFFFF; border-bottom:5px #cccccc solid; position:absolute; top:41px; right:0px; z-index:100; min-width:138px; }
+#header .menuNav .language .dropdown a{ display:block; color:#999999; border-bottom:1px #EBEBEB solid; line-height:26px; }
+#header .menuNav .language .dropdown .last{ border:none; }
+#header .menuNav .language .dropdown a:hover{ color:#666666; }
+#header .menuNav .language .dropdown .selected,#header .menuNav .language .dropdown .selected:hover{ color:#006BB6; }
+
+#betaAlert{ background:#5a0000; border:1px #fb0200 solid; width:1148px; height:34px; padding:0 16px; margin:auto; color:#FFFFFF; line-height:34px; font-size:12px; }
+#betaAlert a{ text-decoration:underline; color:#FFFFFF; }
+#betaAlert .desc{ float:left; }
+#freePreviewBar{max-width:1180px;max-height:36px;overflow:hidden;margin:auto}
+
+a.adaptBtn{ display: inline-block; height: 100%; font-size:11px; font-family:arial; }
+a.adaptBtn span { display: inline-block; cursor: pointer; }
+a.adaptBtn .btnLeft { background: url(../images/blue-button.png) 0 0; width: 10px; height: 30px; }
+a.adaptBtn .btnRight { background: url(../images/blue-button.png) -10px 0; width: 10px; height: 30px; }
+a.adaptBtn .btnContent { background: none repeat scroll 0 0 #177BC7; height: 30px; line-height: 30px; color: #FFF; padding:0 10px; vertical-align: top; }
+a.adaptBtn .btnContent span { font-weight:normal; color:#C5E5FC; font-size:12px; }
+a.adaptBtn:hover .btnLeft { background-position: 0 -30px; }
+a.adaptBtn:hover .btnRight { background-position: -10px -30px; }
+a.adaptBtn:hover .btnContent { background:url('../images/blue-button-mid_mo.png') repeat-x; }

@@ -1,0 +1,40 @@
+.scrollerContainer{ position:relative; overflow:hidden;}
+
+.scrollerContainer .content{ position:absolute; width:95%; }
+.scrollerContainer table.trackX td,.scrollerContainer table.trackY td,.scrollerContainer table.thumbX td,.scrollerContainer table.thumbY td{ height:auto !important; }
+.scrollerContainer .trackX,.scrollerContainer .trackY,.scrollerContainer .thumbX,.scrollerContainer .thumbY { position:absolute; }
+.scrollerContainer .trackY{ width:4px; top:0px; right:0px; cursor:pointer; }
+.scrollerContainer .trackY .top,.scrollerContainer .trackY .bottom{ width:4px; height:3px; overflow:hidden; background:url('../images/scrollBgY.png') no-repeat; }
+.scrollerContainer .trackY .top{ background-position:0px -12px; }
+.scrollerContainer .trackY .middle{ width:4px; background:#C7C7C7; height:100% !important; }
+.scrollerContainer .trackY .bottom{ background-position:0px -15px; }
+
+.scrollerContainer .thumbY{ width:4px; top:0px; right:0px; cursor:pointer; }
+.scrollerContainer .thumbY .thumbtop,.scrollerContainer .thumbY .thumbbottom{ width:4px; height:3px; overflow:hidden; background:url('../images/scrollBgY.png') no-repeat; }
+.scrollerContainer .thumbY .thumbmiddle{ width:4px; background:#363636; height:100% !important; }
+.scrollerContainer .thumbY .thumbbottom{ background-position:0px -3px; }
+.scrollerContainer .over .thumbtop{ background-position:0px -6px; }
+.scrollerContainer .over .thumbmiddle{ background:#6E6E6E !important; }
+.scrollerContainer .over .thumbbottom{ background-position:0px -9px; }
+
+
+.scrollerContainer .trackX{ height:10px; left:0px; bottom:0px; cursor:pointer; z-index:4; }
+.scrollerContainer .trackX .left,.scrollerContainer .trackX .right{ width:6px; height:10px; background:url('../images/scrollBgX.png') no-repeat; float:none; }
+.scrollerContainer .trackX .center{ height:10px; background:#949494; width:100%; }
+.scrollerContainer .trackX .right{ background-position:-7px 0px; }
+
+.scrollerContainer .thumbX{ height:10px; left:0px; bottom:0px; cursor:pointer; z-index:5; }
+.scrollerContainer .thumbX .thumbleft,.scrollerContainer .thumbX .thumbcenter,.scrollerContainer .thumbX .thumbright{ width:6px; height:10px; background:url('../images/scrollBgX.png') no-repeat; }
+.scrollerContainer .thumbX .thumbleft{ background-position:-14px 0px; }
+.scrollerContainer .thumbX .thumbcenter{ background-position:0px -10px; background-repeat:repeat-x; width:100%; }
+.scrollerContainer .thumbX .thumbright{ background-position:-19px 0px; }
+.scrollerContainer .over .thumbleft{ background-position:-27px 0px; }
+.scrollerContainer .over .thumbcenter{ height:10px; background-position:0px -20px; background-repeat:repeat-x; width:100%; }
+.scrollerContainer .over .thumbright{ background-position:-32px 0px; }
+
+.scrollerContainer .bold{ width:auto; }
+
+.dark .trackY .top,.dark .trackY .bottom{ background-image:url('../images/scrollBgY_dark.png'); }
+.dark .thumbY .thumbtop,.dark .thumbY .thumbbottom{ background-image:url('../images/scrollBgY_dark.png'); }
+.dark .trackY .middle{ background:#000000; }
+.dark .thumbY .thumbmiddle{ background:#303030; }
